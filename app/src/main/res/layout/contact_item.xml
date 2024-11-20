@@ -1,51 +1,42 @@
-<!-- res/layout/contact_item.xml -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="8dp">
 
+    <!-- Contact Name and Number -->
     <TextView
-        android:id="@+id/nameTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Name"
-        android:textSize="16sp"
-        android:textColor="#000"
-        tools:ignore="HardcodedText" />
-
-    <TextView
-        android:id="@+id/phoneTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Phone"
-        android:textSize="14sp"
-        android:textColor="#666"
-        tools:ignore="HardcodedText" />
-
-    <LinearLayout
+        android:id="@+id/contactNameTextView"
         android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Contact Name (Number)"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Edit Button -->
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Edit"
+        android:textSize="14sp"
+        android:padding="4dp"
+        android:textColor="#FFFFFF"
+        tools:ignore="HardcodedText" />
 
-        <Button
-            android:id="@+id/editButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Edit"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:textColor="#2196F3"
-            tools:ignore="HardcodedText" />
-
-        <Button
-            android:id="@+id/deleteButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Delete"
-            style="@style/Widget.AppCompat.Button.Borderless"
-            android:textColor="#F44336"
-            tools:ignore="HardcodedText" />
-    </LinearLayout>
+    <!-- Delete Button -->
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="Delete"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText" />
 
 </LinearLayout>

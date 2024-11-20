@@ -1,5 +1,4 @@
 package com.example.safteydevice;
-
 public class Contact {
     private String name;
     private String phone;
@@ -25,3 +24,8 @@ public class Contact {
         this.phone = phone;
     }
 }
+
+
+
+
+
